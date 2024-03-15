@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>♥ Sarun Hirachan</li>
+    </ul>
+  </nav>
+  <main>
+    <h1>ToDo</h1>
+
+    <div class="addTask">
+      <input type="text" max="999" min="2" placeholder="Add Task" id="addTask">
+      <input type="submit" value="+" id="addBtn" onclick="addTask()" ><br>
+    </div>
+
+    <div class="search">
+      <input type="text" max="999" min="2" placeholder="Search Task" id="searchTask" oninput="filterTasks()">
+    </div>
+    <ul id="todoItems">
+
+    </ul>
+    <div class="counter">
+      <p id="total">Total Tasks: <span id="totalTask">0</span> </p>
+      <p id="completed">Completed Tasks: <span id="completedTask">0</span> </p>
+    </div>
+
+    <script src="script.js"></script>
+  </main>
+</body>
+</html>
